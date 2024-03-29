@@ -1,0 +1,389 @@
+/* a minimalist set of CSS resets */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Butterfly+Kids&family=Dosis:wght@200..800&family=Silkscreen:wght@400;700&family=Stick+No+Bills&display=swap') 
+;
+
+.silkscreen-regular {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+html {
+
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  
+  padding:30px;
+  padding-left:30px;
+  margin: 5rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.pop-up-data{
+background-color:blue;
+}
+
+.summary-tile :hover{
+  transform: scale(1.5);
+  color:red;
+}
+
+h2{
+  font-family: "Silkscreen", sans-serif;
+  color:green;
+}
+h3{
+  font-family: "Silkscreen", sans-serif;
+  font-style:italic;
+}
+
+nav {
+width:100%;
+   background-color: limegreen;
+   padding: 1rem;
+
+}
+
+
+
+nav ul {
+
+  font-family: "Dosis", sans-serif;
+width:100%;
+    list-style-type: none;
+
+    padding: 0;
+
+    margin: 0;
+
+    display: flex;
+
+    justify-content: space-around;
+
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+   padding-left: 160px;
+  float: left;
+}
+
+li a {
+  font-size:30px;
+  border-radius:30px;
+  display: inline-block;
+  padding: 8px;
+  background-color: greenyellow;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color:pink;
+  transform: scale(1.0);
+}
+
+.list2{
+justify-content: space-between;
+  font-size:20px;
+  border-radius:30px;
+  display: inline-block;
+  padding: 8px;
+  background-color: transparent;
+  text-decoration: none;
+  border:3px greenyellow solid;
+  line-height: 10px;
+}
+
+
+
+nav a {
+
+  font-family: "Stick No Bills", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <360>;
+  font-style: normal;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 1rem;
+
+}
+/* images and videos max out at full width */
+
+img{
+  width:50vw;
+  height:30vh;
+}
+
+
+.imgsm{
+  height: 50px;
+  width:50px;
+
+}
+
+#items{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+
+h1{
+  font-family: "Silkscreen", sans-serif;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: hotpink;
+  color: white;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+}
+
+.button2:hover {
+  background-color: hotpink;
+  color: white;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+}
+
+#b1{
+  display: flex;
+  flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 45px;
+    column-gap: 25px;
+}
+
+#bookshelf{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 45px;
+    column-gap: 25px;
+}
+body{
+    background-color: white;
+}
+
+body.activated{
+    overflow: hidden;
+}
+#pop-up-wrapper{
+    display: none;
+    background-color: white;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+#exit-button{
+  background-color:yellowgreen;
+  text-align: center;
+  border-raidus:50%;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.book-detail{
+    margin-top: 10px;
+}
+.book-detail > h2{
+    font-size: 50px;
+    color: white;
+}
+
+.book-item{
+    display: flex;
+    border-radius: 9px;
+    padding:0px;
+    cursor: pointer;
+}
+.book-item:hover{
+  background-color:greenyellow;
+    transform: scale(1.15);
+    transition: scale ease-in-out 0.3s;
+}
+.book-item:hover .summary{
+    display: inline-block;
+}
+
+.book-item > img{
+    border: solid 1px black;
+    padding: 0px;
+    max-width: 140px;
+    border-radius: 5px 0px 5px 5px;
+    background-color: white;
+
+}
+.text-content > div{
+    font-family: "Silkscreen", sans-serif;
+    border: yellowgreen 5px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0px 5px 5px 0;
+    background-color: white;
+
+}
+
+.text-content h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    margin: 0;
+}
+
+.summary-tile{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    min-height: 500px;
+    background-color: white;
+    border: solid 1px black;
+    font-size: 45px;
+    display: none;
+}
+
+section{
+  padding-top:-10px;
+  padding-bottom:45px;
+  padding-left:255px;
+}
+
+
+.text-content h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0;
+}
+
+.rating-star{
+    width: 15px;
+    height: 19px;
+}
+
+.reading-date p{
+    background-color: rgb(213, 213, 213);
+    padding: 2px 4px;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 5px 0px;
+}
+
+.summary{
+    min-width: 500px;
+    min-height: 100px;
+    font-size: 26px;
+    position: absolute;
+    border: solid 1px black !important;
+    border-radius: 4px;
+    display: none;
+}
+
+.button {
+  font-size:150px;
+  font-family: "Butterfly Kids", sans-serif;
+  font-style: normal;
+  background-color: ; /* Green */
+  border: none;
+  border-radius:10px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button2 {
+  font-size:50px;
+  font-family: "Butterfly Kids", sans-serif;
+  background-color: green ; /* Green */
+  border: none;
+  border-radius:10px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+.centered {
+  font-size:20px;
+  text-decoration:none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.sidecont{
+  width: 30%;
+  border: 1px solid black;
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: top;
+  flex-wrap: wrap;
+  /* height: 500px; */
+}
+
+}
+
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid brown;
+  padding: 10px;
+  width: 10%;
+  height: 150px;
+  margin:20px;
+}
+
+.item span {
+  border: 1px solid pink;
+  padding: 1em;
+}
+.item: hover {
+  background-color: green;
+}
